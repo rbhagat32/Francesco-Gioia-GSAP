@@ -24,7 +24,7 @@ tl.from('.images img', {
 })
 
 tl.from('footer h2', {
-    x: -80,
+    y: 80,
     opacity: 0,
     duration: .4,
     stagger: .4,
