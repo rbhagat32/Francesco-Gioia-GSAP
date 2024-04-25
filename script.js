@@ -5,7 +5,7 @@ tl.from('nav h1, .links button, .links a', {
     duration: .4,
     opacity: 0,
     stagger: .4,
-    delay: .4,
+    delay: .8,
 })
 
 tl.from('.text h1', {
