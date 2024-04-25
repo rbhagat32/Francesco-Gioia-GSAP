@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRANCESCO GIOIA</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="h-screen overflow-hidden flex flex-col justify-between">
+    <!-- Navbar -->
+    <nav class="container mx-auto flex justify-between mt-6 text-xl uppercase">
+      <h1 class="font-bold text-2xl">Francesco Gioia</h1>
+      <div class="links flex gap-8">
+        <button id="light-mode-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+            />
+          </svg>
+        </button>
+
+        <a href="#">Instagram</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+    <!-- Main -->
+    <main class="container mx-auto relative">
+      <div
+        class="text w-[70%] mx-auto text-[10rem] font-medium drop-shadow-lg uppercase leading-[8rem] mt-60 tracking-[-.075em] relative z-10"
+      >
+        <h1 class="glow">Hello, I`m</h1>
+        <h1 class="glow text-center">Francesco</h1>
+        <h1 class="glow text-right pr-16">Gioia</h1>
+      </div>
+      <div class="images">
+        <img
+          src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="absolute rounded h-[400px] w-[280px] top-0 left-[42%] rotate-[20deg]"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1464863979621-258859e62245?q=80&w=2572&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="absolute rounded h-[400px] w-[280px] top-0 left-[42%] rotate-[10deg]"
+        />
+        <img
+          src="https://plus.unsplash.com/premium_photo-1669704098750-7cd22c35422b?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="absolute rounded h-[400px] w-[280px] top-0 left-[42%]"
+        />
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="container mx-auto">
+      <div
+        class="mx-auto flex justify-between text-center mb-2 text-sm uppercase leading-[1rem]"
+      >
+        <h2>Francesco Gioia</h2>
+        <h2 class="mr-20">A Street Photographer Based in London</h2>
+        <h2>&copy;2021</h2>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
