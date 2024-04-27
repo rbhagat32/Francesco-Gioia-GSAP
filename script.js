@@ -19,7 +19,7 @@ tl.from('.images img', {
     x: 150,
     rotate: 45,
     opacity: 0,
-    duration: .4,
+    duration: .6,
     stagger: .3,
 })
 
