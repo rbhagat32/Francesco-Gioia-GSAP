@@ -33,42 +33,49 @@ tl.from('footer h2', {
 tl.to('.text h1', {
     x: 200,
     opacity: 0,
-    delay: 1,
+    delay: 0.5,
     duration: .4,
     stagger: .2,
 })
 
 tl.to('.text', {
-    y: 1000,
+    y: -1000,
 })
 
-tl.to('#img1', {
+gsap.to('#img1', {
     x: -520,
     y: 100,
-    scale: 1.5,
+    scale: 1.25,
     rotate: 0,
-    duration: .6,
+    delay: 9.5,
+    duration: 1,
 })
 
-tl.to('#img2', {
+gsap.to('#img2', {
     x: 480,
     y: 100,
-    scale: 1.5,
+    scale: 1.25,
     rotate: 0,
-    duration: .6,
+    delay: 9.5,
+    duration: 1,
 })
 
-tl.to('#img3', {
+gsap.to('#img3', {
     x: -20,
     y: 100,
-    scale: 1.5,
+    scale: 1.25,
     rotate: 0,
-    duration: .6,
+    delay: 9.5,
+    duration: 1,
 })
 
-document.querySelector('#img1').addEventListener('mousemove', function(dets) {
-    console.log(dets.x, dets.y);
+tl.to('#img1, #img2, #img3', {
+    opacity: 0,
+    delay: 2,
+})
 
+tl.to('#img1, #img2, #img3', {
+    y: -1000,
 })
 
 // Text Selection Disable
