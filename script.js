@@ -78,6 +78,10 @@ tl.to('#img1, #img2, #img3', {
     y: -1000,
 })
 
+tl.from('.string', {
+    opacity: 0,
+})
+
 // Text Selection Disable
 document.addEventListener("selectstart", (e) => {
     e.preventDefault();
@@ -85,9 +89,15 @@ document.addEventListener("selectstart", (e) => {
 
 
 // Light Mode
-const btn = document.querySelector('button');
+const btn = document.querySelector('#light-mode-btn');
+const string1 = document.querySelector('.string svg')
 btn.addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
+    if (document.body.classList.contains('light-mode')) {
+        string1.svg.path.stroke = 'black';
+    } else {
+        string1.svg.path.stroke = 'white';
+    }
 });
 
 // Loader Animation

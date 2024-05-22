@@ -91,3 +91,8 @@ a:hover:after {
     opacity: 0;
   }
 }
+
+.string svg path {
+  stroke: var(--clr-light);
+  stroke-width: 2px;
+}
